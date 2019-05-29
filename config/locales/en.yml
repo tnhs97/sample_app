@@ -1,11 +1,11 @@
 en:
-  hello: "Hello world"
   static_pages:
     home:
       title: "Home"
       para1_html: "This is the home page for the %{href}"
       para2: "sample application"
       welcome: "Welcome to Sample App"
+      alt: "Rails logos"
     help:
       title: "Help"
       para1_html: "Get help on the Ruby on Rails Tutorial at the %{link}"
@@ -20,6 +20,19 @@ en:
       title: "Contact"
       para1_html: "Contact the Ruby on Rails Tutorial about the sample app at the %{href}"
       contact_page: "contact page"
+  users:
+    new:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirmation"
+      submmit: "Create my account"
+  misc:
+    error_message_html: "This form contains %{error_count}"
+    errors:
+      one: "1 error"
+      other: "%{count} errors"
+    user_not_exists: "There's no such user"
   book: "book"
   tutorial: "Ruby on Rails Tutorial"
   main_title: "Ruby on Rails Tutorial Sample App"
