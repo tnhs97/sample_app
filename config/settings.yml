@@ -4,3 +4,4 @@ minimum_password_length: 6
 gravatar_size: 80
 remember_me: "1"
 remember_me_not: "0"
+gravatar_medium: 50
