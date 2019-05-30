@@ -22,9 +22,6 @@ en:
       contact_page: "contact page"
   users:
     new:
-      name: "Name"
-      email: "Email"
-      password: "Password"
       password_confirmation: "Confirmation"
       submmit: "Create my account"
   misc:
@@ -33,6 +30,7 @@ en:
       one: "1 error"
       other: "%{count} errors"
     user_not_exists: "There's no such user"
+    login_fails: "Invalid email/password combination"
   book: "book"
   tutorial: "Ruby on Rails Tutorial"
   main_title: "Ruby on Rails Tutorial Sample App"
@@ -41,7 +39,14 @@ en:
   log_in_href: "link"
   home: "Home"
   help: "Help"
+  users: "Users"
+  profile: "Profile"
+  settings: "Settings"
+  name: "Name"
+  email: "Email"
+  password: "Password"
   log_in: "Log in"
+  log_out: "Log out"
   sign_up: "Sign up now"
   author: "Michael Hart"
   sample_app: "Sample App"
