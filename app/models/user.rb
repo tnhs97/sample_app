@@ -11,7 +11,7 @@ class User < ApplicationRecord
     length: {maximum: Settings.maximum_email_length},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-    length: {minimum: Settings.minimum_password_length}
+    length: {minimum: Settings.minimum_password_length}, allow_nil: true
 
   before_save ->{email.downcase!}
 
