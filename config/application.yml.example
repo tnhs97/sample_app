@@ -1,0 +1,20 @@
+secret_key_base:
+database_username:
+database_password:
+database_reconnect:
+database_host:
+database_pool:
+database_name:
+mail_username:
+mail_password:
+production:
+  secret_key_base:
+  devise_key_base:
+  database_username:
+  database_password:
+  database_reconnect:
+  database_host:
+  database_pool:
+  database_name:
+  mail_username:
+  mail_password:
