@@ -5,6 +5,7 @@ gravatar_size: 80
 remember_me: "1"
 remember_me_not: "0"
 gravatar_medium: 50
+gravatar_small: 30
 default_from_email: "noreply@example.com"
 address: "smtp.gmail.com"
 port: 587
