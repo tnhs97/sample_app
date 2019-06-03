@@ -12,3 +12,6 @@ domain: "gmail.com"
 authentication: "plain"
 enable_auto: true
 password_expire: 2
+maximum_content_length: 140
+index_per_page: 20
+maximum_upload_size: 5
