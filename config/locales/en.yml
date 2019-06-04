@@ -1,6 +1,6 @@
 en:
   static_pages:
-    home:
+    guest:
       title: "Home"
       para1_html: "This is the home page for the %{href}"
       para2: "sample application"
@@ -32,6 +32,7 @@ en:
     password_expired: "Password reset has expired."
     password_empty: "can't be empty"
     something_wrong: "Something wrong. Updating failed"
+    relationship_not_exists: "You are not following this user"
   user_mailer:
     password_reset:
       para1: "To reset your password click the link below:"
@@ -100,6 +101,10 @@ en:
   micropost_deleted: "Micropost deleted"
   micropost_detele_failed: "Micropost delete failed"
   less_than_5mb: "should be less than 5MB"
+  following: "following"
+  followers: "followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
   author: "Michael Hart"
   sample_app: "Sample App"
   footer_text_html: "The %{main_href} by %{author_href}"

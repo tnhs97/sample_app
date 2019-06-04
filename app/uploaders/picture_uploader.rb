@@ -16,6 +16,10 @@ class PictureUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
+  # def default_url(*)
+  #   "/images/fallback/" + [version_name, "default.png"].compact.join("_")
+  # end
+
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   def extension_whitelist

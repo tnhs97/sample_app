@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: %i(destroy)
 
   def index
-    @users = User.activated.paginate page: params[:page],
+    @users = User.active.paginate page: params[:page],
       per_page: Settings.index_per_page
   end
 
@@ -45,6 +45,18 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = t "following"
+    @users = @user.following.paginate(page: params[:page])
+    render :show_follow
+  end
+
+  def followers
+    @title = t "followers"
+    @users = @user.followers.paginate(page: params[:page])
+    render :show_follow
+  end
+
   private
 
   def user_params
@@ -53,7 +65,7 @@ class UsersController < ApplicationController
   end
 
   def correct_user
-    redirect_to root_url unless current_user? @user
+    redirect_to root_path unless current_user? @user
   end
 
   def load_user
